@@ -1,0 +1,17 @@
+Select :
+<select [(ngModel)]="selectVal">
+    <option *ngFor="let i of d1">
+        {{i}}
+    </option>
+</select>
+<br><br>
+<span *ngIf="selectVal=='textbox'">
+<input type="text" placeholder="textbox">
+</span>
+
+<span *ngIf="selectVal=='textarea'">
+<textarea>
+This is textarea...
+</textarea>
+</span>
+
